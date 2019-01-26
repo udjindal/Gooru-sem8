@@ -59,4 +59,3 @@ if __name__ == '__main__':
         #print(values)
 con.close()
 con1.close()
-s
