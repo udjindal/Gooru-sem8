@@ -51,8 +51,8 @@ def pTransit(resource):
         for a in assesments:
             k = cur.query(#number of students who completed in 1st attempt)
             kTotal = cur.query(#total studnets who attemptted a1 and consumed r1)
+            ptrans /= len(assesments);
             ptrans += k/kTotal
-        ptrans /= len(assesments);
         competenciesJson[c1] = ptrans
     commitToDatabase(competenciesJson, resource)
 if __name__ == '__main__':
